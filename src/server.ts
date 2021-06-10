@@ -6,7 +6,6 @@ require('dotenv').config();
 import express = require('express');
 const app = express();
 // eslint-disable-next-line no-unused-vars
-import { print } from './lib';
 // enable CORS (https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
 // so that your API is remotely testable by FCC
 import cors = require('cors');
