@@ -9,6 +9,7 @@
 	"scripts": {
 		"start": "node dist/server.js",
 		"build": "tsc",
+		"watch": "tsc -w",
 		"dev": "nodemon dist/server.js",
 		"lint": "eslint dist/server.js"
 	},
