@@ -25,20 +25,20 @@ app.get('/', (req, res) => {
 app.get('/api/whoami', (req, res) => {
     res.json({
         language: req.headers['accept-language'],
-        ip: req.ip,
+        ipaddress: req.ip,
         software: req.headers['user-agent'],
     });
 });
 
 
 // listen for requests :)
-import { AddressInfo } from 'net';
-const listener = app.listen(process.env.PORT, () => {
-    const { port } = listener.address() as AddressInfo;
-    console.log('Your app is listening on port ' + port);
-});
-
-// const devPort = 3000;
-// app.listen(devPort, () => {
-//     console.log('Your app is listening on port ' + devPort);
+// import { AddressInfo } from 'net';
+// const listener = app.listen(process.env.PORT, () => {
+//     const { port } = listener.address() as AddressInfo;
+//     console.log('Your app is listening on port ' + port);
 // });
+
+const devPort = 3000;
+app.listen(devPort, () => {
+    console.log('Your app is listening on port ' + devPort);
+});

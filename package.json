@@ -3,6 +3,9 @@
 	"version": "0.0.1",
 	"description": "API project for freeCodeCamp",
 	"main": "dist/server.js",
+	"engines": {
+		"node": "10.x"
+	},
 	"scripts": {
 		"start": "node dist/server.js",
 		"build": "tsc",
