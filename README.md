@@ -3,7 +3,7 @@
 # Give it some personality
 This project was created by me, Lucas.
 Its pretty simple, but I added some of my favorite techs and conventions,
-like Typescript, Yarn, Eslint and [Conventional Commits] (https://www.conventionalcommits.org/).
+like Typescript, Yarn, Eslint and [Conventional Commits](https://www.conventionalcommits.org/).
 This last one is cool and you may never heard about it.
 
 # If you want to fork it
