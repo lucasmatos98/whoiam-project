@@ -5,7 +5,6 @@
 require('dotenv').config();
 import express = require('express');
 const app = express();
-// eslint-disable-next-line no-unused-vars
 // enable CORS (https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
 // so that your API is remotely testable by FCC
 import cors = require('cors');
@@ -31,13 +30,13 @@ app.get('/api/whoami', (req, res) => {
 
 
 // listen for requests :)
-// import { AddressInfo } from 'net';
-// const listener = app.listen(process.env.PORT, () => {
-//     const { port } = listener.address() as AddressInfo;
-//     console.log('Your app is listening on port ' + port);
-// });
-
-const devPort = 3000;
-app.listen(devPort, () => {
-    console.log('Your app is listening on port ' + devPort);
+import { AddressInfo } from 'net';
+const listener = app.listen(process.env.PORT, () => {
+    const { port } = listener.address() as AddressInfo;
+    console.log('Your app is listening on port ' + port);
 });
+
+// const devPort = 3000;
+// app.listen(devPort, () => {
+//     console.log('Your app is listening on port ' + devPort);
+// });
